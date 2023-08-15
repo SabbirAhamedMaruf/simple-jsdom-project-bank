@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+  </head>
+  <body class="bg-indigo-900">
+    <main>
+      <section class="flex flex-col justify-center items-center h-[100vh]">
+        <h1 class="font-bold lg:text-6xl mb-20 text-indigo-400">Welcome To Dashboard</h1>
+        <div class="flex flex-row gap-52 mb-10">
+          <div class="w-56 h-32 p-5 bg-gradient-to-r from-red-500 to-orange-500 rounded-md ">
+            <h1 class="font-bold text-2xl text-white">Deposit</h1>
+            <h2 class="font-bold text-2xl text-white">$<span id="deposit-window">0</span></h2>
+          </div>
+          <div class="w-56 h-32 p-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md">
+            <h1 class="font-bold text-2xl text-white">Withdraw</h1>
+            <h2  class="font-bold text-2xl text-white">$<span id="withdraw-window">0</span></h2>
+          </div>
+          <div class="w-56 h-32 p-5 bg-gradient-to-r from-teal-400 to-yellow-200 rounded-md">
+            <h1 class="font-bold text-2xl text-white">Balance</h1>
+            <h2 class="font-bold text-2xl text-white">$ <span id="balance-window">1240</span></h2>
+          </div>
+        </div>
+        <div class="flex gap-10">
+          <div class="w-96 h-48 bg-gradient-to-l from-cyan-300 to-blue-500 rounded-md flex flex-col items-center justify-center">
+            <h1 class="font-bold text-2xl text-white mb-4">Please Deposit</h1>
+            <input id="deposit" type="number" id="depositBox" class="bg-white h-7 rounded-md font-bold"/> <br>
+            <button id="btn-deposit" class="h-10 w-28 border-4 border-white rounded-2xl text-white font-bold hover:border-indigo-500 hover:text-indigo-500" type="submit">Deposit</button>
+          </div>
+          <div class="w-96 h-48 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-md flex flex-col items-center justify-center">
+            <h1 class="font-bold text-2xl text-white mb-4">Please Withdraw</h1>
+            <input id="withdraw" type="number" id="withdrawBox" class="bg-white h-7 rounded-md"/> <br>
+            <button id="btn-withdraw" class="h-10 w-28 border-4 border-white rounded-2xl text-white font-bold hover:border-indigo-500 hover:text-indigo-500" type="submit">Withdraw</button>
+          </div>
+        </div>
+        <div>
+          <button id="btn-logout" class="font-bold text-2xl mt-10 h-10 w-36 bg-indigo-500 rounded-2xl text-white border-2 border-transparent hover:border-white">Logout</button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>
